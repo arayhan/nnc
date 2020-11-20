@@ -858,6 +858,30 @@ small {
     text-transform: capitalize !important;
 }
 
+.hoverable-title {
+    display: -webkit-box;
+    overflow: hidden;
+    color: rgba(var(--second-color), 1);
+    padding: 5px;
+    border-left: 8px solid rgba(var(--second-color), 1);
+    font-size: 20px;
+    text-transform: uppercase;
+    transition: all .5s ease;
+}
+
+.hoverable-title:hover {
+    color: white;
+    cursor: pointer;
+    background: rgba(var(--second-color), 1);
+}
+
+.hoverable-title.green { border-left-color: #0FB94E; color: #0FB94E; }
+.hoverable-title.green:hover { background: #0FB94E; color: white; }
+.hoverable-title.chocolate { border-left-color: #F58021; color: #F58021; }
+.hoverable-title.chocolate:hover { background: #F58021; color: white; }
+.hoverable-title.gray { border-left-color: #707070; color: #707070; }
+.hoverable-title.gray:hover { background: #707070; color: white; }
+
 .bu-terkini {
     position: relative;
 }
