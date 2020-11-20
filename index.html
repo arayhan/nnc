@@ -1162,11 +1162,11 @@
             </div>
         </div>
     </section>
-
+    
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/clamp-js/0.7.0/clamp.min.js"></script>
+    <script src="resources/vendors/ellipsis/jquery.ellipsis.js"></script>
 
     <script type="text/javascript">
         $(document).ready(function() {
@@ -1186,7 +1186,7 @@
             });
 
             /* ellipsis */
-            $clamp($('.txt-desc'), {clamp: 3});
+            $('.txt-desc').ellipsis({ lines: 2 });
         });
     </script>
     <script>
