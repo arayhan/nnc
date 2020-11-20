@@ -533,33 +533,6 @@
     <script src="resources/vendors/ellipsis/jquery.ellipsis.js"></script>
 
     <script type="text/javascript">
-        $(document).ready(function() {
-            $('.btn-share .sc-box').hover(function() {
-                jQuery(this).parent().find('.sc-hide').toggle();
-            });
-
-            /* slide */
-            $('.news-slider').slick({
-                centerMode: true,
-                centerPadding: '0',
-                dots: true,
-                infinite: true,
-                arrows: false,
-                autoplay: true,
-                autoplaySpeed: 2000,
-            });
-
-            $('#infografik-slider').slick({
-                infinite: true,
-                variableWidth: true,
-                centerPadding: '3',
-                prevArrow: $('.prev-arrow'),
-                nextArrow: $('.next-arrow'),
-            });
-
-            /* ellipsis */
-            $('.txt-desc').ellipsis({ lines: 2 });
-        });
     </script>
 </body>
 </html>
