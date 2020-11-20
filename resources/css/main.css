@@ -1530,6 +1530,11 @@ small {
     color: rgba(var(--black-color), 1)
 }
 
+.infografik #infografik-slider .infografik-item img {
+    max-width: 300px;
+    margin-right: 15px;
+    border-radius: 15px;
+}
 
 /* End  infografik section */
 

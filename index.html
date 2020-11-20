@@ -1209,43 +1209,21 @@
                 <div class="col-12 my-3">
                     <h4 class="red-title">Infografik
                     </h4>
-                    <div class="row justify-content-center row-eq-height">
-                        <div class="col-12 col-sm-6 col-md-3 my-3">
-                            <div class="box-graf">
-                                <a href="#" class="graf-img">
-                                    <img src="resources/images/graf.jpg">
-                                </a>
-                                <a href="#" class="graf-desc">
-                                5 Gunung di pulau Jawa yang wajib kamu daki
-                            </a>
-                            </div>
+                    <div id="infografik-slider">
+                        <div class="infografik-item">
+                            <img src="resources/images/infographic/infographic-1.jpg" class="img-fluid">
                         </div>
-                        <div class="col-12 col-sm-6 col-md-3 my-3">
-                            <div class="box-graf">
-                                <a href="#" class="graf-img">
-                                    <img src="resources/images/graf2.jpg">
-                                </a>
-                                <a href="#" class="graf-desc">Mengukur kekuatan Arsenal di musim ini
-                            </a>
-                            </div>
+                        <div class="infografik-item">
+                            <img src="resources/images/infographic/infographic-2.png" class="img-fluid">
                         </div>
-                        <div class="col-12 col-sm-6 col-md-3 my-3">
-                            <div class="box-graf">
-                                <a href="#" class="graf-img">
-                                    <img src="resources/images/graf.jpg">
-                                </a>
-                                <a href="#" class="graf-desc">10 Tips buat kamu berbelanja ria di saat pandemi
-                            </a>
-                            </div>
+                        <div class="infografik-item">
+                            <img src="resources/images/infographic/infographic-3.jpg" class="img-fluid">
                         </div>
-                        <div class="col-12 col-sm-6 col-md-3 my-3">
-                            <div class="box-graf">
-                                <a href="#" class="graf-img">
-                                    <img src="resources/images/graf2.jpg">
-                                </a>
-                                <a href="#" class="graf-desc">Kemensos bergerak cepat 20 titik wilayah di Jawa yang membutuhkan bantuan pangan telah berhasil diterima warga
-                            </a>
-                            </div>
+                        <div class="infografik-item">
+                            <img src="resources/images/infographic/infographic-4.jpg" class="img-fluid">
+                        </div>
+                        <div class="infografik-item">
+                            <img src="resources/images/infographic/infographic-5.png" class="img-fluid">
                         </div>
                     </div>
                 </div>
@@ -1306,14 +1284,11 @@
                         </div>
                     </div>
                 </div>
-
-
             </div>
         </div>
         <div class="foot-bot py-2 mt-3">
             <div class="container">
                 <div class="row">
-
                     <div class="col-12 text-center py-2">
                         <p class="mb-0">Copyright © 2020 by Netral News All Rights Reserved.</p>
                     </div>
@@ -1342,6 +1317,12 @@
                 arrows: false,
                 autoplay: true,
                 autoplaySpeed: 2000,
+            });
+
+            $('#infografik-slider').slick({
+                infinite: false,
+                variableWidth: true,
+                centerPadding: '3',
             });
 
             /* ellipsis */
