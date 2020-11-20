@@ -690,17 +690,38 @@ small {
 
 .news-slider .slick-dots li,
 .news-slider .slick-dots li button {
-    width: 10px !important;
-    height: 10px !important;
+    position: relative;
+    width: 15px !important;
+    height: 15px !important;
 }
 
 .news-slider .slick-dots li button:before {
-    color: white !important;
-    line-height: 10px !important;
-    width: 10px !important;
-    height: 10px !important;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    content: '';
+    background: red;
+    border-radius: 100%;
+    opacity: 1 !important;
 }
 
+.news-slider .slick-dots li button:after {
+    display: none;
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    content: '';
+    background: white;
+    border-radius: 100%;
+}
+
+.news-slider .slick-dots li.slick-active button:after {
+    display: inline-block;
+}
 
 /* END headline section */
 
