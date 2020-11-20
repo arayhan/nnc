@@ -293,6 +293,11 @@ small {
     color: rgba(var(--second-color), 1);
 }
 
+.btn-category {
+    padding: 10px 15px;
+    font-size: 1em;
+}
+
 .ellip {
     display: block;
     height: 100%;
