@@ -29,7 +29,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="resources/css/main.css">
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
-    <link rel="stylesheet" type="text/css" href="resources/slick/slick-theme.css" />
+    <link rel="stylesheet" type="text/css" href="resources/vendors/slick/slick-theme.css" />
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;0,500;0,600;0,700;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <style>
         .article {
@@ -179,7 +179,6 @@
                                         <a href="#" class="tag-desc bg-kuning">Gaya Hidup</a>
                                         <a href="#" class="txt-desc">
                                             <p>Ini Lima Alasan Tom Delonge Suka Hal Berbau Alien</p>
-    
                                         </a>
                                         <ul class="mini-desc">
                                             <li>
@@ -1167,6 +1166,7 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clamp-js/0.7.0/clamp.min.js"></script>
 
     <script type="text/javascript">
         $(document).ready(function() {
@@ -1174,7 +1174,7 @@
                 jQuery(this).parent().find('.sc-hide').toggle();
             });
 
-            /*slide*/
+            /* slide */
             $('.news-slider').slick({
                 centerMode: true,
                 centerPadding: '0',
@@ -1184,6 +1184,9 @@
                 autoplay: true,
                 autoplaySpeed: 2000,
             });
+
+            /* ellipsis */
+            $clamp($('.txt-desc'), {clamp: 3});
         });
     </script>
     <script>
