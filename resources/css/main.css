@@ -674,6 +674,7 @@ small {
     color: white;
     display: block;
     padding: 10px 0 5px;
+    outline: none;
 }
 
 .box-terkini .txt-desc:hover {
