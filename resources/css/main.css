@@ -949,6 +949,28 @@ small {
     color: rgba(var(--black-color), .7)
 }
 
+.bu-desc-terkini .cta .cta-item {
+    margin-right: 30px;
+    color: red;
+    position: relative;
+}
+
+.bu-desc-terkini .cta .cta-item .cta-icon {
+    font-size: 1.2em;
+}
+
+.bu-desc-terkini .cta .cta-item .cta-value {
+    position: absolute;
+    top: -10px;
+    left: calc(100% - 10px);
+    font-weight: bold;
+    background: red;
+    color: white;
+    padding: 2px 5px;
+    border-radius: 80px;
+    font-size: 0.5em;
+}
+
 .bu-desc-terkini .btn-share {
     display: block;
     position: relative;
