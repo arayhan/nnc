@@ -858,6 +858,12 @@ small {
     text-transform: capitalize !important;
 }
 
+.red-title + .bottom-line {
+    width: 100%;
+    height: 1px;
+    background: red;
+}
+
 .hoverable-title {
     display: -webkit-box;
     overflow: hidden;
