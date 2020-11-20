@@ -749,6 +749,10 @@ small {
     position: relative;
 }
 
+.moving-txt .breaknews .b-paragh .b-item img {
+    max-width: 50px;
+}
+
 
 /* banner ads section */
 
