@@ -298,6 +298,35 @@ small {
     font-size: 1em;
 }
 
+.also-read {
+    background: #eee;
+    border: 1px solid #ddd;
+    padding: 0 20px;
+    margin-top: 5px;
+    border-radius: 10px;
+    list-style: none;
+}
+
+.also-read li {
+    border-bottom: 2px dashed #707070;
+}
+
+.also-read li:last-child {
+    border-bottom: 0
+}
+
+.also-read li a {
+    margin: 20px 0;
+    display: block;
+    text-decoration: none;
+    color: #707070;
+    font-weight: bold;
+}
+
+.also-read li a:hover {
+    color: red;
+}
+
 .ellip {
     display: block;
     height: 100%;
