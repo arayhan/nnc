@@ -37,6 +37,14 @@ p {
     background: #33A3F1;
 }
 
+.txt-biru {
+    color: #33A3F1;
+}
+
+.border-bottom-dashed {
+    border-bottom: 2px dashed #ccc;
+}
+
 .bg-kuning {
     background: #CFBB00;
 }
@@ -600,6 +608,10 @@ small {
     -o-border-radius: 15px;
 }
 
+.box-terkini.single {
+    max-width: 100%;
+}
+
 .box-terkini a {
     text-decoration: none !important;
 }
@@ -631,6 +643,11 @@ small {
 
 .box-terkini.big .bt-img {
     min-height: 420px;
+}
+
+.box-terkini.single .bt-img {
+    width: 100%;
+    object-fit: cover;
 }
 
 .box-terkini:hover .bt-img {
@@ -881,6 +898,11 @@ small {
     font-size: 20px;
     text-transform: uppercase;
     border-left: 8px solid rgba(var(--second-color), 1);
+}
+
+.red-title.no-border {
+    border: 0;
+    padding-left: 0;
 }
 
 .red-title .index {
