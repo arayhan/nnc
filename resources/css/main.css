@@ -117,6 +117,10 @@ p {
     object-fit: cover;
 }
 
+.rounded-image {
+    border-radius: 15px;
+}
+
 .input-group .form-control {
     border-radius: 10px 0 0 10px !important;
     -webkit-border-radius: 10px 0 0 10px !important;
