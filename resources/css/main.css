@@ -296,6 +296,7 @@ small {
 .btn-category {
     padding: 10px 15px;
     font-size: 1em;
+    text-decoration: none !important;
 }
 
 .also-read {
