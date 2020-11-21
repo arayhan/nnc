@@ -33,6 +33,10 @@ p {
     font-size: 14px !important;
 }
 
+img {
+    object-fit: cover;
+}
+
 .bg-biru {
     background: #33A3F1;
 }
