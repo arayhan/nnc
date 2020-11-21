@@ -1665,6 +1665,12 @@ small {
     height: 300px;
 }
 
+@media screen and (max-width: 768px) {
+    #galeriInfografis img {
+        height: auto;
+    }
+}
+
 /* End  infografik section */
 
 
