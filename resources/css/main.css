@@ -669,6 +669,10 @@ small {
     height: 400px;
 }
 
+.box-terkini.xbig {
+    height: 550px;
+}
+
 .box-terkini.mini {
     height: 192px;
 }
