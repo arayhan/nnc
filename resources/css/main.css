@@ -2312,6 +2312,18 @@ small {
     line-height: 1;
 }
 
+.side-news {
+    max-height: 410px;
+    overflow-y: scroll;
+}
+
+@media screen and (max-width: 992px) {
+    .side-news {
+        max-height: 100%;
+        overflow-y: auto;
+    }
+}
+
 .side-news ul {
     list-style: none;
     padding: 0;
@@ -2338,11 +2350,10 @@ small {
     position: absolute;
     left: 0;
     top: 0;
-    padding: 5px 15px;
+    padding: 5px 12px;
     border-bottom-right-radius: 15px;
     color: white;
     background: red;
-    font-size: 1.2em;
-    font-weight: bold;
+    font-size: 0.9em;
     font-family: var(--font-family);
 }
