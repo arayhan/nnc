@@ -2342,4 +2342,7 @@ small {
     border-bottom-right-radius: 15px;
     color: white;
     background: red;
+    font-size: 1.2em;
+    font-weight: bold;
+    font-family: var(--font-family);
 }
