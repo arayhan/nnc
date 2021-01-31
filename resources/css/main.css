@@ -20,6 +20,14 @@ body {
     font-size: 14px
 }
 
+.font-primary {
+    font-family: var(--font-family);
+}
+
+.font-secondary {
+    font-family: var(--other-font-family);
+}
+
 h1,
 h2,
 h3,
@@ -1003,6 +1011,16 @@ small {
     background: rgba(var(--second-color), 1);
 }
 
+.hoverable-title.purple { border-left-color: purple; color: purple; }
+.hoverable-title.purple:hover { background: purple; color: white; }
+.hoverable-title.bluesea { border-left-color: #33A3F1; color: #33A3F1; }
+.hoverable-title.bluesea:hover { background: #33A3F1; color: white; }
+.hoverable-title.blue { border-left-color: #5E6EF8; color: #5E6EF8; }
+.hoverable-title.blue:hover { background: #5E6EF8; color: white; }
+.hoverable-title.orange { border-left-color: #F58021; color: #F58021; }
+.hoverable-title.orange:hover { background: #F58021; color: white; }
+.hoverable-title.yellow { border-left-color: #CFBB00; color: #CFBB00; }
+.hoverable-title.yellow:hover { background: #CFBB00; color: white; }
 .hoverable-title.green { border-left-color: #0FB94E; color: #0FB94E; }
 .hoverable-title.green:hover { background: #0FB94E; color: white; }
 .hoverable-title.chocolate { border-left-color: #F58021; color: #F58021; }
@@ -1113,6 +1131,10 @@ small {
     font-size: 1.2em;
 }
 
+.bu-desc-terkini .cta.cta-small .cta-item .cta-icon {
+    font-size: 0.8em;
+}
+
 .bu-desc-terkini .cta .cta-item .cta-value {
     position: absolute;
     top: -10px;
@@ -1184,6 +1206,8 @@ small {
 
 .bu-trend {
     border-right: 1px solid transparent;
+    overflow-y: scroll;
+    max-height: 415px;
 }
 
 .bu-list-trend {
@@ -1840,12 +1864,16 @@ small {
 
 /* Small devices (landscape phones, 576px and up)*/
 
+@media (max-width: 998px) {
+    .bu-trend {
+        overflow-y: auto;
+        max-height: 100%;
+    }
+}
+
 @media (min-width: 576px) {
     body {
         font-size: 16px;
-    }
-    .bu-trend {
-        border-right: 1px solid rgba(var(--second-color), 1);
     }
     .love-big {
         max-width: 110px;
@@ -2259,3 +2287,20 @@ small {
 
 
 /* ENd custom radio tabs*/
+
+.news-category .news-category-secondary ol {
+    padding: 0;
+}
+
+.news-category .news-category-secondary ol li {
+    display: flex;
+    counter-increment: news-category-secondary-counter;
+}
+
+.news-category .news-category-secondary ol li:before {
+    content: counter(news-category-secondary-counter);
+    font-weight: bold;
+    margin-right: 0.5rem;
+    font-family: var(--font-family);
+    line-height: 1;
+}
