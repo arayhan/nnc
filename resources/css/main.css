@@ -2307,6 +2307,12 @@ small {
 .news-category .news-category-secondary ol li {
     display: flex;
     counter-increment: news-category-secondary-counter;
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+.news-category .news-category-secondary ol li:not(:last-child) {
+    margin-bottom: 20px;
 }
 
 .news-category .news-category-secondary ol li:before {
@@ -2315,6 +2321,18 @@ small {
     margin-right: 0.5rem;
     font-family: var(--font-family);
     line-height: 1;
+}
+
+.news-category .news-category-secondary ol li a {
+    border-radius: 10px;
+    overflow: hidden;
+    display: inline-block;
+}
+
+.news-category .news-category-secondary ol li a img {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
 }
 
 .side-news {
