@@ -673,6 +673,7 @@ small {
     max-width: 600px;
     margin: 0 auto;
     border-radius: 15px;
+    font-family: var(--font-family);
     -webkit-border-radius: 15px;
     -moz-border-radius: 15px;
     -ms-border-radius: 15px;

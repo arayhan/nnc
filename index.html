@@ -147,7 +147,8 @@
         <div class="container">
             <div class="row row-eq-height ">
                 <div class="col-12 col-lg-5 col-md-8 p-2">
-                    <div class="box-terkini big">
+                    <!-- Desktop -->
+                    <div class="box-terkini big d-none d-md-block">
                         <a href="content-detail.html">
                             <img src="resources/images/Rectangle 22.png" class="bt-img">
                         </a>
@@ -170,8 +171,66 @@
                             </ul>
                         </div>
                     </div>
+
+                    <!-- Mobile -->
+                    <div class="d-block d-md-none">
+                        <div class="news-mobile-slider">
+                            <div class="box-terkini big">
+                                <a href="content-detail.html">
+                                    <img src="https://img.inews.co.id/media/822/files/inews_new/2020/12/19/Cuaca_2_fel_.jpg" class="bt-img">
+                                </a>
+                                <a href="#" class="tag">Headline News</a>
+                                <div class="bt-desc">
+                                    <a href="category.html" class="tag-desc bg-biru">Peristiwa</a>
+                                    <a href="#" class="txt-desc h5 font-weight-bold">
+                                        <p class="h3">BMKG: Waspada Potensi Hujan Lebat di Pegunungan Sumut</p>
+                                    </a>
+                                    <ul class="mini-desc">
+                                        <li>
+                                            <i class="far fa-clock"></i>24 Oktober 2020
+                                        </li>
+                                        <li>
+                                            <i class="fas fa-heart"></i>17
+                                        </li>
+                                        <li>
+                                            <i class="fas fa-comments"></i>23
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="box-terkini big">
+                                <a href="content-detail.html">
+                                    <img src="resources/images/Rectangle 22.png" class="bt-img">
+                                </a>
+                                <a href="#" class="tag">Headline News</a>
+                                <div class="bt-desc">
+                                    <a href="category.html" class="tag-desc bg-biru">Peristiwa</a>
+                                    <a href="#" class="txt-desc h5 font-weight-bold">
+                                        <p class="h3">Libur Panjang Akhir Oktober, Jokowi Minta Jajarannya Waspada Covid-19 Melonjak</p>
+                                    </a>
+                                    <ul class="mini-desc">
+                                        <li>
+                                            <i class="far fa-clock"></i>24 Oktober 2020
+                                        </li>
+                                        <li>
+                                            <i class="fas fa-heart"></i>17
+                                        </li>
+                                        <li>
+                                            <i class="fas fa-comments"></i>23
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="arrow-box">
+                            <ul>
+                                <li id="newsMobileSliderPrevArrow"><img src="resources/images/svg/arrow.svg "></li>
+                                <li id="newsMobileSliderNextArrow"><img src="resources/images/svg/arrow.svg "></li>
+                            </ul>	                        
+                        </div>
+                    </div>
                 </div>
-                <div class="col-12 col-lg-3 col-md-4">
+                <div class="col-12 col-lg-3 col-md-4 d-none d-md-block">
                     <div class="row">
                         <div class="col-12 col-sm-6 col-md-12 p-2">
                             <div class="news-slider">
@@ -2262,6 +2321,16 @@
                 arrows: false,
                 autoplay: true,
                 autoplaySpeed: 2000,
+            });
+
+            $('.news-mobile-slider').slick({
+                centerPadding: '0',
+                infinite: true,
+                arrows: true,
+                autoplay: true,
+                autoplaySpeed: 2000,
+                prevArrow: $('#newsMobileSliderPrevArrow'),
+                nextArrow: $('#newsMobileSliderNextArrow'),
             });
 
             $('#infografik-slider').slick({
