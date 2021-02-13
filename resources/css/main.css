@@ -1876,12 +1876,6 @@ small {
     }
 }
 
-@media (max-width: 480px) {
-    .search-mobile {
-        display: block !important;
-    }
-}
-
 
 /* Small devices (landscape phones, 576px and up)*/
 
