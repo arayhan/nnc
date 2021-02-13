@@ -572,6 +572,11 @@ small {
     margin: -5px 0 0 !important;
 }
 
+.header .navbar-toggler .search {
+    width: 22px;
+    margin: 0px 0 -2px 0 !important;
+}
+
 .header .navbar-light .navbar-nav .active>.nav-link,
 .header .navbar-light .navbar-nav .nav-link:hover,
 .header .navbar-light .navbar-nav .nav-link:focus,
@@ -653,7 +658,14 @@ small {
     display: none;
 }
 
-
+#searchMobile {
+    position: fixed;
+    top: 60px;
+    z-index: 99;
+    background: #eee;
+    padding-top: 15px;
+    box-shadow: 5px 0 5px rgba(0,0,0, 0.5);
+}
 /* headline section */
 
 .headline {

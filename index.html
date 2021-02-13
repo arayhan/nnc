@@ -74,6 +74,9 @@
                         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
                             <img src="resources/images/svg/bars.svg" class="bar">
                         </button>
+                        <button class="navbar-toggler" type="button" id="navSearchBtn">
+                            <img src="resources/images/svg/search.svg" class="search">
+                        </button>
                     </div>
                 </div>
             </div>
@@ -118,6 +121,13 @@
             </div>
         </div>
     </section>
+
+    <div id="searchMobile" class="col-12 text-right search-mobile disnone">
+        <div class=" mobile-search" style="display: flex;margin-bottom: 10px;">
+            <input type="text" class="form-control " placeholder="Cari Berita">
+            <button class="btn btn-sec btn-cari d-flex align-items-center" type="button"><i class="fas fa-search"></i></button>
+        </div>
+    </div>
     
     <div class="push-down"></div>
 
@@ -541,13 +551,6 @@
             </div>
         </div>
     </section>
-
-    <div class="col-12 text-right search-mobile disnone">
-        <div class=" mobile-search" style="display: flex;margin-bottom: 10px;">
-            <input type="text" class="form-control " placeholder="Cari Berita">
-            <button class="btn btn-sec btn-cari d-flex align-items-center" type="button"><i class="fas fa-search"></i></button>
-        </div>
-    </div>
 
     <section class="banner-ads py-4">
         <div class="container">
@@ -2977,6 +2980,9 @@
                 $('.b-title').html(momentNow.format('HH:mm:ss'));
             }, 100);
 
+            $('#navSearchBtn').click(function() {
+                $('#searchMobile').toggleClass('disnone');
+            })
 
             /* slide */
             $('.news-slider').slick({
