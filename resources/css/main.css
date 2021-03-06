@@ -141,6 +141,7 @@ p {
 
 .rounded-image {
     border-radius: 15px;
+    overflow: hidden;
 }
 
 .input-group .form-control {
@@ -1505,7 +1506,6 @@ small {
 
 .video-box-mini iframe {
     width: 100%;
-    min-height: 230px;
 }
 
 .vid-desc {
